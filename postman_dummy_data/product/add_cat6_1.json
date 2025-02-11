@@ -1,0 +1,8 @@
+{
+    "description": "Spare tire",
+    "productName": "Dunlop Tire",
+    "image": "dunlop.jpg",
+    "quantity": "50",
+    "price": 2000000,
+    "discount": 5
+}

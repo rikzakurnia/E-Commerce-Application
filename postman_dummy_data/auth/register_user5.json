@@ -1,0 +1,23 @@
+{
+    "userId": 6,
+    "firstName": "naruto",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "naruto@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street101",
+      "buildingName": "building6",
+      "city": "depok",
+      "state": "konoha",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

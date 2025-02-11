@@ -1,0 +1,23 @@
+{
+    "userId": 7,
+    "firstName": "ruzain",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "ruzain@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street1012",
+      "buildingName": "building16",
+      "city": "tangerang",
+      "state": "banten",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "userId": 9,
+    "firstName": "alyaa",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "alyaa@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street1012",
+      "buildingName": "building16",
+      "city": "depok",
+      "state": "yogyakarta",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

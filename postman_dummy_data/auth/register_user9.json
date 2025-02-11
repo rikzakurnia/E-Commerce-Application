@@ -1,0 +1,23 @@
+{
+    "userId": 10,
+    "firstName": "fani",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "radit@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street1012",
+      "buildingName": "building16",
+      "city": "balam",
+      "state": "lampung",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

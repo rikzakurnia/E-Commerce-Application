@@ -1,0 +1,23 @@
+{
+    "userId": 3,
+    "firstName": "kurnia",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "kurnia@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street10",
+      "buildingName": "building5",
+      "city": "bandung",
+      "state": "jawa barat",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "userId": 4,
+    "firstName": "lubis",
+    "lastName": "bukanadmin",
+    "mobileNumber": "3170547700",
+    "email": "lubis@gmail.com",
+    "password": "rikza",
+    "roles": [
+      {
+        "roleId": 102,
+        "roleName": "USER"
+      }
+    ],
+    "address": {
+      "street": "street101",
+      "buildingName": "building6",
+      "city": "depok",
+      "state": "jawa barat",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  
