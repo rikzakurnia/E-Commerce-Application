@@ -1,0 +1,24 @@
+{
+    "userId": 1,
+    "firstName": "rikza",
+    "lastName": "admin",
+    "mobileNumber": "3170547700",
+    "email": "rikzaadmin@gmail.com",
+    "password": "rikzaadmin",
+    "roles": [
+      {
+        "roleId": 101,
+        "roleName": "ADMIN"
+      }
+    ],
+    "address": {
+      "addressId": 1,
+      "street": "street1",
+      "buildingName": "building",
+      "city": "jakarta",
+      "state": "jakarta",
+      "country": "indonesia",
+      "pincode": "352123"
+    }
+  }
+  

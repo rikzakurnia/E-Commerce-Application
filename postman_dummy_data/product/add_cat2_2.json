@@ -1,0 +1,8 @@
+{
+    "description": "Medicine for headache",
+    "productName": "Panadol",
+    "image": "panadol.jpg",
+    "quantity": "120",
+    "price": 12000,
+    "discount": 5
+}
