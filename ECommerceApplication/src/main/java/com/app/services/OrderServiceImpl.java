@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.app.payloads.CreditCardDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -65,7 +66,7 @@ public class OrderServiceImpl implements OrderService {
 	public ModelMapper modelMapper;
 
 	@Override
-	public OrderDTO placeOrder(String email, Long cartId, String paymentMethod) {
+	public OrderDTO placeOrder(String email, Long cartId, String paymentMethod, CreditCardDTO creditCard) {
 
 		Cart cart = cartRepo.findCartByEmailAndCartId(email, cartId);
 
@@ -81,9 +82,17 @@ public class OrderServiceImpl implements OrderService {
 		order.setTotalAmount(cart.getTotalPrice());
 		order.setOrderStatus("Order Accepted !");
 
+		if (!paymentMethod.equalsIgnoreCase("creditcard")){
+			throw new APIException("Invalid payment method");
+		}
+
 		Payment payment = new Payment();
 		payment.setOrder(order);
 		payment.setPaymentMethod(paymentMethod);
+
+		String maskedCardNumber = maskCardNumber(creditCard.getCardNumber());
+
+		payment.setCardNumber(maskedCardNumber);
 
 		payment = paymentRepo.save(payment);
 
@@ -199,6 +208,11 @@ public class OrderServiceImpl implements OrderService {
 		order.setOrderStatus(orderStatus);
 
 		return modelMapper.map(order, OrderDTO.class);
+	}
+
+	private static String maskCardNumber(String cardNumber) {
+		int length = cardNumber.length();
+		return "*".repeat(length - 4) + cardNumber.substring(length - 4);
 	}
 
 }
